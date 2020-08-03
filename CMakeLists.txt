@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
-project(basic-00-example)
+project(relationship-03-association)
 
-set(CMAKE_CXX_STANDARD 17)
-add_executable(sample Basic00Example.cpp)
+set(SOURCE_FILES main.cpp Doctor.cpp Doctor.h Paciente.cpp Paciente.h)
+
+add_executable(RelacionAsociacionSimple ${SOURCE_FILES})
